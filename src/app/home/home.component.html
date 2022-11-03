@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-12">
+        <label for="">Search for</label>
+        <input type="text" class="form-control" placeholder="Search for any movie..." (keyup)="searching($event)">
+    </div>
+</div>
+
+<div class="row mt-5"> <!-- mt est espace entre 2 div-->
+    <div class="col-sm-6 col-md-3 mb-3" *ngFor="let m of movies" > <!--mb margin button espace entre les films et sm est ecran de mobile contient 2 lignes(12/6) et md mediem de ecran pc 4lignes(12/3) -->
+      <app-moviecard [id]="m.id" [title]="m.title" [image]="m.large_cover_image"></app-moviecard>
+    </div>
+
+  
+    
+</div>

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+.movie-card{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.movie-card > h3 { /*movie-card ta7tha h3 */
+    position: absolute;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    margin-top: calc((360px/2) - 15px);
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+.movie-card:hover > img { /* hover: hia wa9t n7ot curseur 3l image emchi apliqui filter eli fih brightness 0,2  */
+filter: brightness(0.2);
+}
